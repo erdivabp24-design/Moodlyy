@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Diary — Moodly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">✿ Moodly</a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="diary.html" class="nav-link active-link">My Diary</a>
+      <a href="historyt.html" class="nav-link">History</a>
+    </nav>
+  </header>
+
+  <main class="content-page">
+    <div class="page-heading">
+      <span class="tagline">A MOMENT FOR YOURSELF</span>
+      <h1>How's your mood <span>today?</span></h1>
+      <p>Take a moment and listen to what your heart says.</p>
+      <div id="currentDate" class="date-text"></div>
+    </div>
+
+    <section class="diary-card">
+      <h2>Choose your mood</h2>
+      <p class="small-text">Which emoji describes you today?</p>
+
+      <div class="mood-grid">
+        <button class="mood-option" data-mood="Happy" data-emoji="😄">
+          <span class="mood-emoji">😄</span>
+          <span>Happy</span>
+        </button>
+
+        <button class="mood-option" data-mood="Loved" data-emoji="🥰">
+          <span class="mood-emoji">🥰</span>
+          <span>Loved</span>
+        </button>
+
+        <button class="mood-option" data-mood="Calm" data-emoji="😌">
+          <span class="mood-emoji">😌</span>
+          <span>Calm</span>
+        </button>
+
+        <button class="mood-option" data-mood="Sad" data-emoji="😔">
+          <span class="mood-emoji">😔</span>
+          <span>Sad</span>
+        </button>
+
+        <button class="mood-option" data-mood="Tired" data-emoji="😫">
+          <span class="mood-emoji">😫</span>
+          <span>Tired</span>
+        </button>
+
+        <button class="mood-option" data-mood="Angry" data-emoji="😡">
+          <span class="mood-emoji">😡</span>
+          <span>Angry</span>
+        </button>
+      </div>
+
+      <div class="writing-area">
+        <label for="moodStory">Dear diary,</label>
+        <textarea id="moodStory" maxlength="500"
+          placeholder="Write anything you want. What happened today? What are you thinking about?"></textarea>
+        <div class="character-count"><span id="charCount">0</span>/500</div>
+      </div>
+
+      <button id="saveMood" class="btn-primary full-btn">
+        Save My Mood ♡
+      </button>
+      <p id="saveMessage" class="save-message"></p>
+    </section>
+
+    <section class="recent-section">
+      <div class="section-title">
+        <div>
+          <span class="tagline">YOUR LITTLE MEMORIES</span>
+          <h2>Recent Diary</h2>
+        </div>
+        <a href="historyt.html" class="see-all">See all →</a>
+      </div>
+      <div id="recentEntries" class="entries-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Made with love ♡ Moodly</span>
+    <span>Your feelings matter.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
