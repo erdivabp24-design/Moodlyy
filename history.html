@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood History — Moodly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">✿ Moodly</a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="diary.html" class="nav-link">My Diary</a>
+      <a href="historyt.html" class="nav-link active-link">History</a>
+    </nav>
+  </header>
+
+  <main class="content-page">
+    <div class="page-heading">
+      <span class="tagline">EVERY FEELING HAS A STORY</span>
+      <h1>Your mood <span>journey.</span></h1>
+      <p>Look back at the feelings and little moments you've saved.</p>
+    </div>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">📖</span>
+        <div id="totalEntries" class="stat-number">0</div>
+        <p>Total Diary Entries</p>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🌷</span>
+        <div id="favoriteMood" class="stat-number">—</div>
+        <p>Your Most Selected Mood</p>
+      </div>
+    </section>
+
+    <section class="history-section">
+      <div class="section-title">
+        <div>
+          <span class="tagline">ALL YOUR MEMORIES</span>
+          <h2>Mood History</h2>
+        </div>
+        <a href="diary.html" class="btn-secondary">+ New Diary</a>
+      </div>
+
+      <div id="allEntries" class="entries-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Made with love ♡ Moodly</span>
+    <span>Every day is a new beginning.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
